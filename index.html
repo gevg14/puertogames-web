@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PuertoGames - Tu tienda de videojuegos</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Un nav con el nombre de la tienda y enlaces a las otras páginas. -->
+    <header class="header">
+        <div class="container flex justify-between align-center">
+            <div class="logo">
+                <a href="index.html">PuertoGames</a>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#ofertas" class="nav-link">Ofertas</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Seccion -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Bienvenido a PuertoGames</h1>
+            <p class="hero-subtitle">Tu destino para los mejores videojuegos y accesorios</p>
+            <a href="#productos" class="btn btn-secondary">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos Destacados -->
+    <section class="section" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <img src="https://i5.walmartimages.cl/asr/8538e544-b460-4697-9f86-9a4db14e7353.1845a93d6849ae7eddae8eb4ab5f0eec.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" alt="PlayStation 5" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">PlayStation 5</h3>
+                        <p class="product-price">$499.990 CLP </p>
+                        <p class="product-description">La nueva generación de consolas con gráficos impresionantes y tiempos de carga ultrarrápidos.</p>
+                        <a href="producto.html?id=ps5" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <img src="https://newark.cl/wp-content/uploads/2021/12/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png" alt="Xbox Series X" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Xbox Series X</h3>
+                        <p class="product-price">$449.990 CLP </p>
+                        <p class="product-description">La consola Xbox más potente hasta la fecha, con resolución 4K y hasta 120 FPS.</p>
+                        <a href="producto.html?id=xbox" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <img src="https://media.spdigital.cl/thumbnails/products/9656xruh_b61d4922_thumbnail_512.jpg" alt="Nintendo Switch" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Nintendo Switch</h3>
+                        <p class="product-price">$299.990 CLP </p>
+                        <p class="product-description">Consola híbrida que te permite jugar en casa o en cualquier lugar.</p>
+                        <a href="producto.html?id=switch" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="product-card">
+                    <img src="https://i.insider.com/6320ddaae8b5000018511339?width=700" alt="The Legend of Zelda: Tears of the Kingdom" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">The Legend of Zelda: Tears of the Kingdom</h3>
+                        <p class="product-price">$59.990 CLP</p>
+                        <p class="product-description">La nueva aventura de Link en el reino de Hyrule.</p>
+                        <a href="producto.html?id=zelda" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="product-card">
+                    <img src="https://i.ytimg.com/vi/ji0_k1PUX2I/hq720.jpg?sqp=-oaymwEXCK4FEIIDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBT3hQPbWPh5VtfxWqISXtwpQNiNw" alt="God of War Ragnarok" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">God of War Ragnarok</h3>
+                        <p class="product-price">$69.990 CLP</p>
+                        <p class="product-description">Kratos y Atreus se enfrentan al fin del mundo en esta épica aventura.</p>
+                        <a href="producto.html?id=gow" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="product-card">
+                    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2020/12/mando-ps5-0.png?x=480&y=375&quality=80" alt="DualSense Controller" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">DualSense Controller</h3>
+                        <p class="product-price">$69.990 CLP</p>
+                        <p class="product-description">El innovador mando de PS5 con retroalimentación háptica y gatillos adaptativos.</p>
+                        <a href="producto.html?id=dualsense" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Newsletter -->
+    <section class="section" style="background-color: var(--color-light);">
+        <div class="container">
+            <h2 class="section-title">Suscríbete a nuestro Newsletter</h2>
+            <p style="text-align: center; margin-bottom: var(--spacing-md);">Recibe las últimas novedades y ofertas exclusivas directamente en tu correo.</p>
+            <form class="contact-form">
+                <div class="flex gap-sm" style="max-width: 500px; margin: 0 auto;">
+                    <input type="email" placeholder="Tu correo electrónico" class="form-input" style="flex: 1;">
+                    <button type="submit" class="btn btn-secondary">Suscribirse</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">PuertoGames</h3>
+                    <p>Tu tienda de confianza para videojuegos y accesorios desde 2010.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Consolas</a></li>
+                        <li><a href="#">Videojuegos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Merchandising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +56 9 5566 7788 </li>
+                        <li><i class="fas fa-envelope"></i> info@puertogames.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PuertoGames. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menú móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
