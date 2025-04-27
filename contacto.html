@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PuertoGames</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="container flex justify-between align-center">
+            <div class="logo">
+                <a href="index.html">PuertoGames</a>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#productos" class="nav-link">Productos</a></li>
+                    <li><a href="index.html#ofertas" class="nav-link">Ofertas</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.9)), url('https://placehold.co/1200x400/3a10e5/ffffff?text=Contacto');">
+        <div class="container">
+            <h1 class="hero-title">Contacto</h1>
+            <p class="hero-subtitle">Estamos aquí para ayudarte. Ponte en contacto con nosotros.</p>
+        </div>
+    </section>
+
+    <!-- Contenido Principal -->
+    <main class="container section">
+        <div class="flex flex-wrap gap-lg">
+            <!-- Información de Contacto -->
+            <div style="flex: 1; min-width: 300px;">
+                <h2 style="margin-bottom: var(--spacing-md);">Información de Contacto</h2>
+                <div class="flex flex-column gap-md">
+                    <div class="flex gap-sm align-center">
+                        <div style="width: 40px; height: 40px; background-color: var(--color-primary); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-xs);">Dirección</h3>
+                            <p>Robinson Crusoe, Puerto Montt</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-sm align-center">
+                        <div style="width: 40px; height: 40px; background-color: var(--color-primary); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-xs);">Teléfono</h3>
+                            <p>+56 9 5566 7788</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-sm align-center">
+                        <div style="width: 40px; height: 40px; background-color: var(--color-primary); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-xs);">Email</h3>
+                            <p>info@puertogames.com</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-sm align-center">
+                        <div style="width: 40px; height: 40px; background-color: var(--color-primary); border-radius: 50%; display: flex; justify-content: center; align-items: center; color: white;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: var(--spacing-xs);">Horario</h3>
+                            <p>Lunes a Viernes: 10:00 - 20:00</p>
+                            <p>Sábados: 10:00 - 14:00
+                            <p>*** NO TRABAJAMOS FERIADOS *** </p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Formulario de Contacto -->
+            <div style="flex: 2; min-width: 300px;">
+                <h2 style="margin-bottom: var(--spacing-md);">Envíanos un mensaje</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="flex flex-wrap gap-sm">
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="name" class="form-label">Nombre *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-sm">
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="phone" class="form-label">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        <div class="form-group" style="flex: 1; min-width: 250px;">
+                            <label for="subject" class="form-label">Asunto *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje *</label>
+                        <textarea id="message" name="message" class="form-textarea" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">¿Cómo prefieres que te contactemos?</label>
+                        <div class="flex gap-md">
+                            <div class="flex gap-sm align-center">
+                                <input type="radio" id="contact-email" name="contact-preference" value="email" checked>
+                                <label for="contact-email">Email</label>
+                            </div>
+                            <div class="flex gap-sm align-center">
+                                <input type="radio" id="contact-phone" name="contact-preference" value="phone">
+                                <label for="contact-phone">Teléfono</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="flex gap-sm align-center">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <label for="newsletter">Suscribirme al newsletter para recibir ofertas y novedades</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="flex gap-sm align-center">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">He leído y acepto la <a href="#">política de privacidad</a> *</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Mapa -->
+        <div style="margin-top: var(--spacing-xl);">
+            <h2 style="margin-bottom: var(--spacing-md);">Nuestra Ubicación</h2>
+            <div style="width: 100%; height: 400px; background-color: #eee; display: flex; justify-content: center; align-items: center;">
+                <!-- Aquí iría un mapa real, pero usamos un placeholder -->
+                <div style="text-align: center;">
+                    <i class="fas fa-map-marked-alt" style="font-size: 48px; color: var(--color-primary); margin-bottom: var(--spacing-sm);"></i>
+                    <img src="https://www.google.com/maps/vt/data=AARDo-BNnKFEHBDay5bgIVIDwBsEtEfkDPu9MK_yj7Y4-dlfBs05rtSZ9WyeFskb6swrN_RsoCmJxZ7mphI-mzLpcVCyCtqfq_iv-cXPnAX10MsdAX0JOJiP4RLparkP1BMM-wPrrgnMZxogeOYmajJpqxFEvFzDlowB4HAqtk_ZkkwrVuZGjKQs-pI3p75F68bOFuEzjlH91ef9XWbP2n62togZHs2zSpvbNkOMKifcdLsESchBtnpShiSxecLkkCiSE57H-cCVNWe5klrHpiwVMRraE4LQm4c" alt="
+                    Ubicacion Robinson Crusoe" class="product-img">
+                    <p>robinson crusoe, Puerto Montt</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Preguntas Frecuentes -->
+        <div style="margin-top: var(--spacing-xl);">
+            <h2 style="margin-bottom: var(--spacing-md);">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuáles son los métodos de pago aceptados?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos tarjetas de crédito/débito Visa, Mastercard, PayPal, transferencia bancaria y pago contra reembolso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuánto tiempo tarda en llegar mi pedido?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo de entrega aproximadamente es de 2-3 días habiles y 5-8 días habiles . Los pedidos realizados antes de las 14:00h suelen salir el mismo día.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Puedo devolver un producto?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, tienes 1 mes desde la recepción del producto para devolverlo. El producto debe estar en su embalaje original y en perfecto estado. Los gastos de devolución corren por cuenta del cliente, excepto en caso de producto defectuoso.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen garantía en los productos?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Todos nuestros productos tienen hasta una garantía maxima de 1 año.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">PuertoGames</h3>
+                    <p>Tu tienda de confianza para videojuegos y accesorios desde 2010.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="index.html#ofertas">Ofertas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Consolas</a></li>
+                        <li><a href="#">Videojuegos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Merchandising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +56 9 5566 7788</li>
+                        <li><i class="fas fa-envelope"></i> info@puertogames.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PuertoGames. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menú móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Validación del formulario
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Validación básica
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            const privacy = document.getElementById('privacy');
+            
+            // Validar campos requeridos
+            if (!name.value.trim()) {
+                markInvalid(name, 'El nombre es obligatorio');
+                isValid = false;
+            } else {
+                markValid(name);
+            }
+            
+            if (!email.value.trim()) {
+                markInvalid(email, 'El email es obligatorio');
+                isValid = false;
+            } else if (!isValidEmail(email.value)) {
+                markInvalid(email, 'Por favor, introduce un email válido');
+                isValid = false;
+            } else {
+                markValid(email);
+            }
+            
+            if (!subject.value.trim()) {
+                markInvalid(subject, 'El asunto es obligatorio');
+                isValid = false;
+            } else {
+                markValid(subject);
+            }
+            
+            if (!message.value.trim()) {
+                markInvalid(message, 'El mensaje es obligatorio');
+                isValid = false;
+            } else {
+                markValid(message);
+            }
+            
+            if (!privacy.checked) {
+                alert('Debes aceptar la política de privacidad');
+                isValid = false;
+            }
+            
+            // Si todo es válido, enviar el formulario (simulado)
+            if (isValid) {
+                // Aquí iría el código para enviar el formulario
+                alert('¡Mensaje enviado correctamente! Nos pondremos en contacto contigo lo antes posible.');
+                contactForm.reset();
+            }
+        });
+        
+        // Función para validar email
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        // Funciones para marcar campos como válidos o inválidos
+        function markInvalid(field, message) {
+            field.style.borderColor = 'red';
+            
+            // Buscar si ya existe un mensaje de error
+            let errorMessage = field.parentElement.querySelector('.error-message');
+            
+            if (!errorMessage) {
+                errorMessage = document.createElement('p');
+                errorMessage.className = 'error-message';
+                errorMessage.style.color = 'red';
+                errorMessage.style.fontSize = '0.8rem';
+                errorMessage.style.marginTop = '5px';
+                field.parentElement.appendChild(errorMessage);
+            }
+            
+            errorMessage.textContent = message;
+        }
+        
+        function markValid(field) {
+            field.style.borderColor = '';
+            
+            // Eliminar mensaje de error si existe
+            const errorMessage = field.parentElement.querySelector('.error-message');
+            if (errorMessage) {
+                errorMessage.remove();
+            }
+        }
+
+        // Funcionalidad de acordeón para las FAQ
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+                
+                // Cerrar otras preguntas
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style>
+        /* Estilos adicionales para la página de contacto */
+        .faq-container {
+            margin-top: var(--spacing-md);
+        }
+        
+        .faq-item {
+            margin-bottom: var(--spacing-sm);
+            border: 1px solid #ddd;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: var(--spacing-sm);
+            background-color: #f9f9f9;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question h3 {
+            margin: 0;
+            font-size: var(--font-size-normal);
+        }
+        
+        .faq-answer {
+            padding: 0 var(--spacing-sm);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-normal), padding var(--transition-normal);
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: var(--spacing-sm);
+            max-height: 500px;
+        }
+        
+        .faq-item.active .fa-chevron-down {
+            transform: rotate(180deg);
+        }
+        
+        .fa-chevron-down {
+            transition: transform var(--transition-normal);
+        }
+        
+        /* Estilos para los inputs de tipo radio y checkbox */
+        input[type="radio"], input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-primary);
+        }
+    </style>
+</body>
+</html>
