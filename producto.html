@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto - PuertoGames</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabecera -->
+    <header class="header">
+        <div class="container flex justify-between align-center">
+            <div class="logo">
+                <a href="index.html">PuertoGames</a>
+            </div>
+            <nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#productos" class="nav-link">Productos</a></li>
+                    <li><a href="index.html#ofertas" class="nav-link">Ofertas</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="container section">
+        <!-- Breadcrumb -->
+        <div class="flex gap-sm" style="margin-bottom: var(--spacing-md);">
+            <a href="index.html">Inicio</a>
+            <span>></span>
+            <a href="index.html#productos">Productos</a>
+            <span>></span>
+            <span id="product-breadcrumb">Detalle de Producto</span>
+        </div>
+
+        <!-- Detalle del Producto -->
+        <div class="product-detail" id="product-detail-container">
+            <!-- Contenido dinámico que se cargará con JavaScript -->
+            <div class="product-detail-img">
+                <img src="https://i5.walmartimages.cl/asr/8538e544-b460-4697-9f86-9a4db14e7353.1845a93d6849ae7eddae8eb4ab5f0eec.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" alt="PlayStation 5" id="product-image">
+            </div>
+            <div class="product-detail-info">
+                <h1 class="product-detail-title" id="product-title">PlayStation 5</h1>
+                <p class="product-detail-price" id="product-price">$499.990 CLP </p>
+                <div class="flex gap-sm" style="margin-bottom: var(--spacing-md);">
+                    <div class="flex align-center gap-sm">
+                        <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                        <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                        <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                        <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                        <i class="fas fa-star-half-alt" style="color: var(--color-secondary);"></i>
+                        <span>(4.5/5 - 128 reseñas)</span>
+                    </div>
+                </div>
+                <p class="product-detail-description" id="product-description">
+                    La PlayStation 5 redefine la experiencia de juego con gráficos impresionantes y tiempos de carga ultrarrápidos. 
+                    Equipada con un SSD ultrarrápido, retroalimentación háptica, gatillos adaptativos y audio 3D, ofrece un nivel 
+                    de inmersión sin precedentes.
+                </p>
+                <h3 style="margin: var(--spacing-md) 0 var(--spacing-sm);">Características principales</h3>
+                <ul class="product-features" id="product-features">
+                    <li>CPU AMD Zen 2 de 8 núcleos a 3.5GHz</li>
+                    <li>GPU AMD RDNA 2 con 10.28 TFLOPS</li>
+                    <li>SSD personalizado de 825GB con velocidades de hasta 5.5GB/s</li>
+                    <li>Resolución 4K a 60fps, compatible con 120fps</li>
+                    <li>Ray tracing acelerado por hardware</li>
+                    <li>Audio 3D Tempest para una inmersión sonora completa</li>
+                </ul>
+                <div class="flex gap-sm" style="margin-top: var(--spacing-md);">
+                    <div class="form-group" style="width: 100px;">
+                        <label for="quantity" class="form-label">Cantidad</label>
+                        <input type="number" id="quantity" class="form-input" value="1" min="1" max="10">
+                    </div>
+                </div>
+                <div class="flex gap-sm" style="margin-top: var(--spacing-md);">
+                    <button class="btn btn-primary" style="flex: 1;">
+                        <i class="fas fa-shopping-cart"></i> Añadir al carrito
+                    </button>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-heart"></i> Añadir a favoritos
+                    </button>
+                </div>
+                <div style="margin-top: var(--spacing-md); padding: var(--spacing-sm); background-color: #f0f0f0; border-radius: var(--border-radius);">
+                    <p><i class="fas fa-truck"></i> Envío gratuito para pedidos superiores a $50.000 CLP </p>
+                    <p><i class="fas fa-undo"></i> Devoluciones gratuitas durante 30 días</p>
+                    <p><i class="fas fa-shield-alt"></i> Garantía de 2 años</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pestañas de información adicional -->
+        <div style="margin-top: var(--spacing-xl);">
+            <div class="flex" style="border-bottom: 1px solid #ddd;">
+                <button class="tab-btn active" data-tab="description">Descripción</button>
+                <button class="tab-btn" data-tab="specifications">Especificaciones</button>
+                <button class="tab-btn" data-tab="reviews">Reseñas</button>
+            </div>
+            <div class="tab-content active" id="description">
+                <div style="padding: var(--spacing-md) 0;">
+                    <h3>Descripción detallada</h3>
+                    <p>La PlayStation 5 marca el inicio de una nueva generación de consolas con un rendimiento sin precedentes. Su arquitectura personalizada integra una CPU y GPU de última generación para ofrecer experiencias de juego increíblemente inmersivas.</p>
+                    <p>El SSD ultrarrápido revoluciona los tiempos de carga, permitiendo transiciones casi instantáneas entre escenas de juego y reduciendo drásticamente los tiempos de espera. La tecnología de retroalimentación háptica y los gatillos adaptativos del mando DualSense ofrecen sensaciones táctiles que responden a tus acciones en el juego.</p>
+                    <p>El sistema de audio 3D Tempest crea paisajes sonoros envolventes que te sumergen completamente en la acción, permitiéndote percibir sonidos desde cualquier dirección con un nivel de precisión asombroso.</p>
+                    <p>La PS5 es compatible con la mayoría de juegos de PS4, permitiéndote disfrutar de tu biblioteca existente con mejoras de rendimiento. Además, incluye la aplicación PlayStation Plus que te da acceso a una colección de los mejores juegos de PS4 si eres suscriptor del servicio.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="Especificaciones">
+                <div style="padding: var(--spacing-md) 0;">
+                    <h3>Especificaciones técnicas</h3>
+                    <table style="width: 100%; border-collapse: collapse; margin-top: var(--spacing-sm);">
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">CPU</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">AMD Zen 2, 8 núcleos a 3.5GHz (frecuencia variable)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">GPU</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">AMD RDNA 2, 10.28 TFLOPS, 36 CUs a 2.23GHz (frecuencia variable)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Memoria</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">16GB GDDR6</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Almacenamiento</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">SSD personalizado de 825GB</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Unidad óptica</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">Blu-ray Ultra HD (66G/100G) ~10xCAV</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Resolución</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">Hasta 4K a 120Hz, 8K</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Audio</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">Tempest 3D AudioTech</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Dimensiones</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">390mm x 104mm x 260mm (ancho x alto x profundidad)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Peso</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">4.5kg</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Puertos</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">USB Type-A (Hi-Speed USB), USB Type-A (Super-Speed USB 10Gbps) x2, USB Type-C (Super-Speed USB 10Gbps)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd; font-weight: bold;">Conectividad</td>
+                            <td style="padding: var(--spacing-xs); border-bottom: 1px solid #ddd;">Ethernet (10BASE-T, 100BASE-TX, 1000BASE-T), IEEE 802.11 a/b/g/n/ac/ax, Bluetooth 5.1</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-content" id="Reseñas">
+                <div style="padding: var(--spacing-md) 0;">
+                    <h3>Reseñas de clientes</h3>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <div class="flex justify-between" style="margin-bottom: var(--spacing-xs);">
+                            <div class="flex align-center gap-sm">
+                                <strong>Juan Pérez</strong>
+                                <div>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                </div>
+                            </div>
+                            <span>15/03/2025</span>
+                        </div>
+                        <p>Increíble consola, los tiempos de carga son prácticamente inexistentes y los gráficos son impresionantes. El mando DualSense es una revolución en cuanto a inmersión. Totalmente recomendada.</p>
+                    </div>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <div class="flex justify-between" style="margin-bottom: var(--spacing-xs);">
+                            <div class="flex align-center gap-sm">
+                                <strong>María García</strong>
+                                <div>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="far fa-star" style="color: var(--color-secondary);"></i>
+                                </div>
+                            </div>
+                            <span>02/04/2025</span>
+                        </div>
+                        <p>La PS5 es una gran mejora respecto a la generación anterior. Los juegos se ven y se sienten diferentes gracias al DualSense. El único inconveniente es su tamaño, ocupa bastante espacio.</p>
+                    </div>
+                    <div style="margin-bottom: var(--spacing-md);">
+                        <div class="flex justify-between" style="margin-bottom: var(--spacing-xs);">
+                            <div class="flex align-center gap-sm">
+                                <strong>Carlos Rodríguez</strong>
+                                <div>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star" style="color: var(--color-secondary);"></i>
+                                    <i class="fas fa-star-half-alt" style="color: var(--color-secondary);"></i>
+                                </div>
+                            </div>
+                            <span>18/03/2025</span>
+                        </div>
+                        <p>Excelente rendimiento y experiencia de juego. El SSD hace maravillas con los tiempos de carga. El audio 3D es impresionante con unos buenos auriculares. La retroalimentación háptica del DualSense añade una nueva dimensión a los juegos.</p>
+                    </div>
+                    <!-- Formulario para añadir reseña como cliente o usuario -->
+                    <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid #ddd;">
+                        <h4 style="margin-bottom: var(--spacing-sm);">Deja tu reseña</h4>
+                        <form>
+                            <div class="form-group">
+                                <label for="review-name" class="form-label">Nombre</label>
+                                <input type="text" id="review-name" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Puntuación</label>
+                                <div class="flex gap-sm">
+                                    <i class="far fa-star rating-star" data-rating="1"></i>
+                                    <i class="far fa-star rating-star" data-rating="2"></i>
+                                    <i class="far fa-star rating-star" data-rating="3"></i>
+                                    <i class="far fa-star rating-star" data-rating="4"></i>
+                                    <i class="far fa-star rating-star" data-rating="5"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-comment" class="form-label">Comentario</label>
+                                <textarea id="review-comment" class="form-textarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Reseña</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DualSense Controller -->
+        <section style="margin-top: var(--spacing-xl);">
+            <h2 class="section-title">Productos Relacionados</h2>
+            <div class="products-grid">
+                <!-- Producto Relacionado 1 -->
+                <div class="product-card">
+                    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2020/12/mando-ps5-0.png?x=480&y=375&quality=80" alt="DualSense Controller" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">DualSense Controller</h3>
+                        <p class="product-price">$69.990 CLP</p>
+                        <p class="product-description">El innovador mando de PS5 con retroalimentación háptica y gatillos adaptativos.</p>
+                        <a href="producto.html?id=dualsense" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Headset Pulse 3D -->
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsXjmXXBPNLUbDBNiAsdVGDqjAhawj_pfF3g&s"  alt="Headset Pulse 3D" class="product-img"> 
+                    <div class="product-info">
+                        <h3 class="product-title">Headset Pulse 3D</h3>
+                        <p class="product-price">$99.990 CLP</p>
+                        <p class="product-description">Auriculares inalámbricos diseñados para PS5 con audio 3D y micrófonos duales.</p>
+                        <a href="producto.html?id=pulse3d" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                
+                <!-- Marvel's Spider-Man 2 -->
+                <div class="product-card">
+                    <img src="https://assets.nuuvem.com/image/upload/t_product_sharing_banner/v1/products/64a31efc902ca31fccaa136e/sharing_images/pkgp0ttwthuwfnwskh22.jpg" alt="Marvel's Spider-Man 2" class="product-img">
+                    <div class="product-info">
+                        <h3 class="product-title">Marvel's Spider-Man 2</h3>
+                        <p class="product-price">$79.990 CLP</p>
+                        <p class="product-description">La nueva aventura de Peter Parker y Miles Morales en un Nueva York más grande y detallado.</p>
+                        <a href="producto.html?id=spiderman2" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="footer-title">PuertoGames</h3>
+                    <p>Tu tienda de confianza para videojuegos y accesorios desde 2010.</p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#productos">Productos</a></li>
+                        <li><a href="index.html#ofertas">Ofertas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Categorías</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Consolas</a></li>
+                        <li><a href="#">Videojuegos</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Merchandising</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contacto</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Calle Principal 123, Ciudad</li>
+                        <li><i class="fas fa-phone"></i> +34 123 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@puertogames.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PuertoGames. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menú móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Pestañas de información
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Eliminar clase active de todos los botones y contenidos
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                
+                // Añadir clase active al botón clicado y su contenido correspondiente
+                btn.classList.add('active');
+                document.getElementById(btn.dataset.tab).classList.add('active');
+            });
+        });
+
+        // Sistema de valoración con estrellas
+        const ratingStars = document.querySelectorAll('.rating-star');
+        let selectedRating = 0;
+
+        ratingStars.forEach(star => {
+            star.addEventListener('mouseover', () => {
+                const rating = parseInt(star.dataset.rating);
+                highlightStars(rating);
+            });
+
+            star.addEventListener('mouseout', () => {
+                highlightStars(selectedRating);
+            });
+
+            star.addEventListener('click', () => {
+                selectedRating = parseInt(star.dataset.rating);
+                highlightStars(selectedRating);
+            });
+        });
+
+        function highlightStars(rating) {
+            ratingStars.forEach(star => {
+                const starRating = parseInt(star.dataset.rating);
+                if (starRating <= rating) {
+                    star.classList.remove('far');
+                    star.classList.add('fas');
+                } else {
+                    star.classList.remove('fas');
+                    star.classList.add('far');
+                }
+            });
+        }
+
+        // Cargar datos del producto según la URL
+        document.addEventListener('DOMContentLoaded', () => {
+            // Obtener el ID del producto de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            
+            // Simulación de base de datos de productos
+            const products = {
+                'ps5': {
+                    title: 'PlayStation 5',
+                    price: '$499.990 CLP',
+                    image: 'https://i5.walmartimages.cl/asr/8538e544-b460-4697-9f86-9a4db14e7353.1845a93d6849ae7eddae8eb4ab5f0eec.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff',
+                    description: 'La PlayStation 5 redefine la experiencia de juego con gráficos impresionantes y tiempos de carga ultrarrápidos. Equipada con un SSD ultrarrápido, retroalimentación háptica, gatillos adaptativos y audio 3D, ofrece un nivel de inmersión sin precedentes.',
+                    features: [
+                        'CPU AMD Zen 2 de 8 núcleos a 3.5GHz',
+                        'GPU AMD RDNA 2 con 10.28 TFLOPS',
+                        'SSD personalizado de 825GB con velocidades de hasta 5.5GB/s',
+                        'Resolución 4K a 60fps, compatible con 120fps',
+                        'Ray tracing acelerado por hardware',
+                        'Audio 3D Tempest para una inmersión sonora completa'
+                    ]
+                },
+                'xbox': {
+                    title: 'Xbox Series X',
+                    price: '$449.499 CLP',
+                    image: 'https://newark.cl/wp-content/uploads/2021/12/fbd2cb56-5c25-414d-9f46-e6a164cdf5be.png',
+                    description: 'La Xbox Series X es la consola más potente de Microsoft hasta la fecha. Con una arquitectura de última generación, ofrece gráficos en 4K a 60fps con capacidad para 120fps, tiempos de carga mínimos y una amplia biblioteca de juegos retrocompatibles.',
+                    features: [
+                        'CPU AMD Zen 2 de 8 núcleos a 3.8GHz',
+                        'GPU AMD RDNA 2 con 12 TFLOPS',
+                        'SSD personalizado de 1TB con velocidades de hasta 4.8GB/s',
+                        'Resolución 4K a 60fps, compatible con 120fps',
+                        'Ray tracing acelerado por hardware',
+                        'Retrocompatibilidad con miles de juegos de generaciones anteriores'
+                    ]
+                },
+                'switch': {
+                    title: 'Nintendo Switch',
+                    price: '$299.990 CLP',
+                    image: 'https://media.spdigital.cl/thumbnails/products/9656xruh_b61d4922_thumbnail_512.jpg',
+                    description: 'La Nintendo Switch es una consola híbrida revolucionaria que te permite jugar tanto en casa conectada al televisor como en modo portátil. Con su innovador diseño y exclusivos títulos de Nintendo, ofrece experiencias de juego únicas para todos los públicos.',
+                    features: [
+                        'Pantalla táctil LCD de 6.2 pulgadas con resolución de 1280x720',
+                        'Procesador NVIDIA Tegra personalizado',
+                        '32GB de almacenamiento interno ampliable mediante tarjetas microSD',
+                        'Batería con autonomía de 4.5 a 9 horas según el juego',
+                        'Joy-Con desmontables con HD Rumble y sensores de movimiento',
+                        'Modo TV, modo sobremesa y modo portátil'
+                    ]
+                },
+                'dualsense': {
+                    title: 'DualSense Controller',
+                    price: '$69.990 CLP',
+                    image: 'https://media.spdigital.cl/thumbnails/products/9656xruh_b61d4922_thumbnail_512.jpg',
+                    description: 'El mando DualSense para PS5 redefine la experiencia de juego con su innovadora retroalimentación háptica y gatillos adaptativos. Siente cada impacto, resistencia y textura directamente en tus manos para una inmersión sin precedentes.',
+                    features: [
+                        'Retroalimentación háptica avanzada',
+                        'Gatillos adaptativos con resistencia dinámica',
+                        'Micrófono integrado y altavoz mejorado',
+                        'Batería recargable mediante USB-C',
+                        'Panel táctil y sensor de movimiento de seis ejes',
+                        'Diseño ergonómico para mayor comodidad en sesiones largas'
+                    ]
+                },
+                'The Legend of Zelda: Tears of the Kingdom': {
+                    title: 'The Legend of Zelda: Tears of the Kingdom',
+                    price: '$59.990 CLP',
+                    image: 'https://i.insider.com/6320ddaae8b5000018511339?width=700',
+                    description: 'La nueva aventura de Link en el reino de Hyrule.',
+                    features: [
+                        'Te aguarda un épico viaje en el que recorrerás las tierras y los vastos cielos de Hyrule en The Legend of Zelda: Tears of the Kingdom',
+                    ]
+                },
+            };
+            
+            // Si existe el producto, actualizar la información
+            if (productId && products[productId]) {
+                const product = products[productId];
+                
+                // Actualizar título de la página
+                document.title = `${product.title} - PuertoGames`;
+                
+                // Actualizar breadcrumb
+                document.getElementById('product-breadcrumb').textContent = product.title;
+                
+                // Actualizar imagen
+                document.getElementById('product-image').src = product.image;
+                document.getElementById('product-image').alt = product.title;
+                
+                // Actualizar información
+                document.getElementById('product-title').textContent = product.title;
+                document.getElementById('product-price').textContent = product.price;
+                document.getElementById('product-description').textContent = product.description;
+                
+                // Actualizar características
+                const featuresElement = document.getElementById('product-features');
+                featuresElement.innerHTML = '';
+                product.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.textContent = feature;
+                    featuresElement.appendChild(li);
+                });
+            }
+        });
+    </script>
+
+    <style>
+        /* Estilos adicionales para la página de producto */
+        .tab-btn {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all var(--transition-normal);
+        }
+        
+        .tab-btn.active {
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+        }
+        
+        .rating-star {
+            cursor: pointer;
+            font-size: var(--font-size-medium);
+            color: var(--color-secondary);
+        }
+    </style>
+</body>
+</html>
